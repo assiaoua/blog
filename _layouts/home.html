@@ -24,7 +24,7 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-
+      <p>{{ text.content | markdownify | strip_html | truncate: 100 }}</p>
     </div>
   </div>
 </div>
