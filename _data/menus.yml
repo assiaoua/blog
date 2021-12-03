@@ -1,21 +1,18 @@
 main:
-  - name: "Services"
-    url: "/services/"
+  - name: "Dataset"
+    url: "https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf"
     weight: 2
+  - name: "Github"
+    url: "https://github.com/epfl-ada/ada-2021-project-sv4ever"
+    weight: 3
   - name: "Team"
     url: "/team/"
-    weight: 3
-  - name: "About"
-    url: "/about/"
     weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Contact"
-    url: "/contact/"
+  - name: "Team"
+    url: "/team/"
     weight: 2
