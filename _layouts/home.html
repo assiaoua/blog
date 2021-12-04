@@ -26,15 +26,18 @@ bodyClass: "page-home"
     <div class="row justify-content-start">
       <h1>Abstract</h1>
       <p>We are interested in using this dataset to answer the following question: Do speech behaviours related to confidence and uncertainty vary between men and women?</p>
+      {% include graph-test.html  %}
       <p>It is common knowledge that women’ speech contains more uncertainties (e.g., “We think this may be correct”) compared to men (e.g., “I know it is correct”). As a result, this project aims at comparing speech behaviours related to uncertainty between genders. For our data, we use citations from Quotebank, an open corpus of more than 1 million quotations from 2015 to 2020, as well as the open-source information from wikidata to have access to the speakers' information. The classification of the quotes is done using an uncertainty detection classifier, based on the statistical analysis of multiple lexical and syntactic features. Specifically, we analyze differences in communicative acts in relation to gender within and between professional areas. Furthermore, we emphasise the roles of nationality, culture/tradition, and education in determining those differences. Finally, we also observe whether there is a possible change over time between 2015 and 2020.</p>
       <h1>Research questions</h1>
       <p>We are interested in using this dataset to answer the following question: Do speech behaviours related to confidence and uncertainty vary between men and women?
         To answer this question, we'll go through the following points:</p>
+      <div>
       <ol>
       <li>To what extent can we observe the differences in communicative acts in relation to gender within a professional area? Are there noticeable differences between those professional areas?</li>
       <li>What are the roles of nationality, culture/tradition (religion, ethnic groups), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us?</li>
       <li>Has there been a possible change over time (from 2015 to 2020)?</li>
       </ol>
+      </div>
       <h1>Proposed additional datasets and tools</h1>
       <p>
         To complement the Quotebank dataset, we use the open-source stored data on Wikidata, as well as a classifier.
