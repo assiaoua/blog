@@ -15,7 +15,11 @@
     text-justify: inter-word;
     list-style-position: inside;
     padding-left: 0.8em;
+    mark {
+      background: rgba(255, 0, 0, .1)
+    }
   }
+
 
 
 }

@@ -2,7 +2,7 @@
 title: Analysis of speech behaviours between genders
 layout: home
 description: Do speech behaviours related to confidence and uncertainty vary between men and women?
-intro_image: "images/illustrations/pixeltrue-data-analyse-1.svg"
+intro_image: "images/illustrations/manypixels/Brainstorming session _Flatline.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
