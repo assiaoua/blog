@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Profession gender difference",
+    "description": "To what extent can we observe the differences in communicative acts in relation to gender within a professional area? ",
+    "image": {
+      "url": "images/features/person.svg",
+      "width": 30,
+      "height": 30
+    }
+  },
+  {
+    "title": "Culture gender difference",
+    "description": "What are the roles of nationality, culture and education in determining those differences in speech between men and women?",
+    "image": {
+      "url": "images/features/globe2.svg",
+      "width": 20,
+      "height": 20
+    }
+  },
+  {
+    "title": "Temporal gender difference",
+    "description": "Has there been a possible change over time from 2015 to 2020 concerning gender speech difference?",
+    "image": {
+      "url": "images/features/hourglass.svg",
+      "width": 20,
+      "height": 20
+    }
+  }
+]

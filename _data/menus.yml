@@ -1,4 +1,7 @@
 main:
+  - name: "Home"
+    url: "/index"
+    weight: 1
   - name: "Dataset"
     url: "https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf"
     weight: 2

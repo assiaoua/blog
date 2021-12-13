@@ -32,6 +32,10 @@
   <ul>
     
     <li class="">
+      <a href="/index">Home</a>
+    </li>
+    
+    <li class="">
       <a href="https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf">Dataset</a>
     </li>
     
@@ -58,6 +62,10 @@
     <div id="main-menu" class="main-menu">
   
   <ul>
+    
+    <li class="">
+      <a href="/index">Home</a>
+    </li>
     
     <li class="">
       <a href="https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf">Dataset</a>
@@ -90,11 +98,19 @@
 
 <p>Do speech behaviours related to confidence and uncertainty vary between men and women?</p>
 
+        <br>
+        
+          
+<div class="button">
+    <a href="/index.html#beginning" class="button">Read more</a>
+</div>
+
+
         
       </div>
       
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="Analysis of speech behaviours between genders" class="intro-image intro-image-absolute intro-image-hide-mobile" src="images/illustrations/manypixels/Brainstorming session _Flatline.svg" />
+        <img alt="Analysis of speech behaviours between genders" class="intro-image intro-image-absolute intro-image-hide-mobile" src="images/illustrations/manypixels/Conversation _Flatline.svg" />
       </div>
       
     </div>
@@ -104,57 +120,83 @@
 <div class="strip">
   <div class="container pt-6 pb-6 px-5 pb-md-10">
     <div class="row justify-content-start">
-      <h1 >Abstract</h1>
-      <p>It is common knowledge that women’ speech contains <b>more uncertainties</b> (e.g., “We think this may be correct”) compared to men (e.g., “I know it is correct”). As a result, this project aims at comparing speech behaviours related to uncertainty between <b>genders</b>. For our data, we use citations from <i>Quotebank</i>, an open corpus of more than 1 million quotations from 2015 to 2020, as well as the open-source information from <i>Wikidata</i> to have access to the speakers' information. The classification of the quotes is done using an <b>uncertainty detection classifier</b>, based on the statistical analysis of multiple lexical and syntactic features. Specifically, we analyze differences in communicative acts in relation to gender within and between professional areas. Furthermore, we emphasise the roles of <b>nationality, culture and education</b> in determining those differences. Finally, we also observe whether there is a possible change over time between <b>2015 and 2020</b>.</p>
-      <h1>Research questions</h1>
-      <p>We are interested in using this dataset to answer the following question: <br>
-        Do speech behaviours related to confidence and uncertainty vary between men and women?
-        <br> <br>
-        To answer this question, we'll go through the following points:</p>
-      <div class = "ol-special">
-      <ol>
-      <li><mark>To what extent can we observe the differences in communicative acts in relation to gender within a professional area? Are there noticeable differences between those professional areas?</mark></li>
-        <li><mark>What are the roles of nationality, culture/tradition (religion, ethnic groups), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us?</mark></li>
-        <li><mark>Has there been a possible change over time (from 2015 to 2020)?</mark></li>
+      <h1 id="beginning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+        </svg> Context</h1>
 
-      </ol>
+      <p>Among all species on Earth, humans have a unique capability of communication using a <b>symbolic communication system</b>, i.e., verbal and written language.  The highly sophisticated language enables humans to communicate in a very precise and complex manner.  Still, communicative speech acts seem to <b>differ</b> between genders. One of the major differences in women and men’s speech is that men have been found to <b>dominate</b> conversations through the use of interruptions and overlaps. Additionally, men use strong expletives, while women use politer versions.</p>
+
+      <img src="../images/illustrations/manypixels/Brainstorming session _Flatline.svg" class="text-image">
+
+      <p>In this project we investigate the <b>variety of speech</b> which is related to specific gender, social norms and variations in the use of language among those genders. We suppose men and women have different speech behaviours, women talking with more <b>uncertainties</b> (doubts). For example, we expect a woman to say “I expect this to do that” while a man would rather say “I know this does that”. Our idea is therefore to analyse whether there is a <b>real</b> difference between genders and, if so, to what extent it is the case.</p>
+
+      <br> <br>
+      <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+      </svg>What is our data?</h1>
+      <p>In the following, we analyse the data from <i>Quotebank</i>, an open corpus which gathers 178 million quotations (attributed to speakers) from 2008 to 2020. Still, in this project, we will only focus on the most recent quotations, being from <b>2015 to 2020</b>.  We combine this dataset with speakers’ information from <i>Wikidata</i>, a collaboratively edited open source knowledge base.</p>
+
+      <img src="../images/logo/Wikidata-logo-en.svg.png" class="logo-image">
+
+
+      <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+      </svg> Goals</h1>
+
+
+      <p>We are interested in using this dataset to answer the following question:
+      <mark>"Do speech behaviours related to confidence and uncertainty vary between men and women?"</mark>
+        To answer this question, we'll go through the following points:<br></p>
+
+      
+      <div class="strip strip-grey">
+        <div class="container pt-6 pb-6 pt-md-4 pb-md-3">
+          <div class="row justify-content-center">
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+              <div class="feature">
+                
+                <div class="feature-image"><img alt="Profession gender difference logo" src="/images/features/person.svg" width="30" height="30" /></div>
+                
+                <h2 class="feature-title">Profession gender difference</h2>
+                <div class="feature-content">To what extent can we observe the differences in communicative acts in relation to gender within a professional area? </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+              <div class="feature">
+                
+                <div class="feature-image"><img alt="Culture gender difference logo" src="/images/features/globe2.svg" width="20" height="20" /></div>
+                
+                <h2 class="feature-title">Culture gender difference</h2>
+                <div class="feature-content">What are the roles of nationality, culture and education in determining those differences in speech between men and women?</div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+              <div class="feature">
+                
+                <div class="feature-image"><img alt="Temporal gender difference logo" src="/images/features/hourglass.svg" width="20" height="20" /></div>
+                
+                <h2 class="feature-title">Temporal gender difference</h2>
+                <div class="feature-content">Has there been a possible change over time from 2015 to 2020 concerning gender speech difference?</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </div>
-      <h1>Proposed additional datasets and tools</h1>
-      <p>
-        To complement the Quotebank dataset, we use the open-source stored data on Wikidata, as well as a classifier.
-        Wikidata
-        It is an open-source dataset (https://www.wikidata.org/wiki/Wikidata:Main_Page).
-        Uncertainty Detection Classifier
-        To classify the quotes according to the uncertain lexical and syntactic features, we use the public uncertainty detection classifier from the paper "P. A. Jean, S. Harispe, S. Ranwez, P. Bellot, and J. Montmain, “Uncertainty detection in natural language: A probabilistic model” ACM Int. Conf. Proceeding Ser., vol. 13-15-June, no. June, 2016, doi: 10.1145/2912845.2912873". It is available for download at: https://github.c-om/pajean/uncertaintyDetection. As this was created on python2, we had to adapt it to run on python3.
-        The data from Wikidata and the adapted classifier can be found on this public drive: https://drive.google.com/drive/folders/1UgvnLUFhs14NDcZYH6NuZx2f_YC5i06N. More instructions are provided within the notebook.</p>
-      <h1>Methods</h1>
-      <p>Pre-processing of the data
+      
+      <div class="importance"><br>
+      <h1>Why is it important?</h1>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <br> <br>
+      <h1>What does the data say?</h1>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-      We started by cleaning the data by removing rows containing missing values on mandatory features for our study, like the speaker's identity and gender. We also checked that there were no duplicate data (no duplicate quotes in Quotebank and speaker id in Wikidata). Additionally, only the quotes where the speaker's probability was greater than 0.5 in Quotebank were kept.
 
-      Then, we did some exploratory data analysis, at first on the distribution of genders and then on the language of the quotes. We observed a vast distribution of 31 genders. Still, to simplify our study, we only kept the "female" and "male" genders, the others representing less than 0.03% of the data. Concerning the language of the quotes, we found that some quotes are not in English. We will further investigate how to only keep the one in English in Milestone 3.
-
-      Creation of the lists of similar professions
-
-      To be able to avoid the bias of different backgrounds between males and females, we sub-divided our data into 4 professional fields: artists, scientists, economists, and politicians.
-
-      In order to do that, we had to merge Quotebank and Wikidata. We merged on the ‘label’ for Wikidata and ‘speaker’ in Quotebank. Since speakers can have the same name, we had the condition that the id of the speaker, which is unique, should be the first one in the potential speaker for the quotes (‘Qids’). To achieve the separation, we searched for the speaker’s occupation of each quote with the help of Wikidata. Then hand-picked the professions to look for as strings and returned them in separate pickle files for each field. This allows us to be able to hold comparisons between genders in the same category of professions.
-
-      Classification of the quotes
-
-      To be able to use the classifier, we first needed to create text files with only the quotes and their index. Then, we ran the classifier on these files and it returned the uncertainty quotes for each file. More instructions are in the notebook to know how to run it.
-
-      Statistical-analysis
-
-      We started by analysing the gender's distribution per each professional field (artists, scientists, economists, and politicians). As our speakers are mostly males, we had to normalize our uncertain speakers by the total number of speakers of each gender.
-
-      To extend our research on the question of gender speech uncertainty, we investigated how do culture and education shape the way men and women speak. We based this study on the nationality, ethnic_group, religion and academic_degree columns of the speaker. This allows each time to remove the bias of the cultural, educational and environmental influence and to compare the gender speech.
-
-      Finally, we investigated a possible change from 2015 to 2020, for each professional field.
-
-      Interpretation of results & Conclusion
-
-        We concluded on our observations and proposed further extensions on the project.</p>
       
 
 <style>
@@ -202,46 +244,6 @@ if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
   </div>
 </div>
 
-
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt="Free Consultation logo" src="/images/features/noun_branding_1885335.svg" width="80" height="80" /></div>
-          
-          <h2 class="feature-title">Free Consultation</h2>
-          <div class="feature-content">New clients receive an obligation free consultation.</div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt="Certified Accountants logo" src="/images/features/noun_The%20Process_1885341.svg" width="80" height="80" /></div>
-          
-          <h2 class="feature-title">Certified Accountants</h2>
-          <div class="feature-content">All members of our team are certified accountants.</div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt="Tax Compliance logo" src="/images/features/noun_3d%20modeling_1885342.svg" width="80" height="80" /></div>
-          
-          <h2 class="feature-title">Tax Compliance</h2>
-          <div class="feature-content">We stay up to date on the latest changes to the tax code.</div>
-        </div>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
 
 
   </div>
