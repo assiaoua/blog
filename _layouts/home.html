@@ -72,6 +72,7 @@ bodyClass: "page-home"
           </div>
         </div>
       </div>
+
       {% endif %}
       <div class="importance"><br>
       <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-patch-exclamation" viewBox="0 0 16 16">
@@ -89,14 +90,24 @@ bodyClass: "page-home"
         <br>
       <h3>Gender</h3>
         <div class="graphs">
-        {% include language_dist_plot.html  %}
+        {% include gender_dist_plot.html  %}
         </div>
         <p>We see that there are 31 genders present in <i>Wikidata</i>. In this analysis, we will only focus on 2 genders: “Female” and “Male”.</p>
 
         <h4>Languages</h4>
-        <p>Most of the quotes are in English. Still, there are some non-English quotes in the dataset. These are removed from our analysis.</p>
+
+        {% include language_dist_plot.html  %}
+
+        <p>Most of the quotes are in English. Still, there are some non-English quotes in the dataset. <br>These are removed from our analysis.</p>
 
         <h4>Female/Male Ratio</h4>
+        <div class="graphs">
+        {% include gender_dist_plot_across_prof.html  %}
+        </div>
+        <div class="graphs"></div>
+        {% include gender_dist_plot_across_time_across_background.html %}
+      </div>
+
         <p>We see that women are only a small fraction of Quotebank speakers. </p>
       </div>
 
