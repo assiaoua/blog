@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Politicians",
+    "description": "The female ratio for the different occupation groups are: ",
+    "pourcentage": "0.21",
+    "image": {
+      "url": "images/illustrations/manypixels/Entrepreneurs_Flatline.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Artist",
+    "description": "The female ratio for the different occupation groups are: ",
+    "pourcentage": "0.34",
+    "image": {
+      "url": "images/illustrations/manypixels/Designer _Flatline-2.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Scientists",
+    "description": "The female ratio for the different occupation groups are: ",
+    "pourcentage": "0.25",
+    "image": {
+      "url": "images/illustrations/manypixels/Scientist_Flatline.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Economists",
+    "description": "The female ratio for the different occupation groups are: ",
+    "pourcentage": "0.18",
+    "image": {
+      "url": "images/illustrations/manypixels/Banker_Flatline.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Other occupations",
+    "description": "The female ratio for the different occupation groups are: ",
+    "pourcentage": "0.20",
+    "image": {
+      "url": "images/illustrations/manypixels/Innovation _Flatline.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

@@ -14,7 +14,7 @@ bodyClass: "page-home"
         {% endif %}
       </div>
       {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative" data-aos="fade-up">
         <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
@@ -31,7 +31,7 @@ bodyClass: "page-home"
 
       <p>Among all species on Earth, humans have a unique capability of communication using a <b>symbolic communication system</b>, i.e., verbal and written language.  The highly sophisticated language enables humans to communicate in a very precise and complex manner.  Still, communicative speech acts seem to <b>differ</b> between genders. One of the major differences in women and men’s speech is that men have been found to <b>dominate</b> conversations through the use of interruptions and overlaps. Additionally, men use strong expletives, while women use politer versions.</p>
 
-      <img src="images/illustrations/manypixels/Brainstorming%20session%20_Flatline.svg" class="text-image">
+      <img src="images/illustrations/manypixels/Brainstorming%20session%20_Flatline.svg" class="text-image" data-aos="fade-up">
 
       <p>In this project we investigate the <b>variety of speech</b> which is related to specific gender, social norms and variations in the use of language among those genders. We suppose men and women have different speech behaviours, women talking with more <b>uncertainties</b> (doubts). For example, we expect a woman to say “I expect this to do that” while a man would rather say “I know this does that”. Our idea is therefore to analyse whether there is a <b>real</b> difference between genders and, if so, to what extent it is the case.</p>
 
@@ -42,22 +42,20 @@ bodyClass: "page-home"
       </svg>What is our data?</h1>
       <p>In the following, we analyse the data from <i>Quotebank</i>, an open corpus which gathers 178 million quotations (attributed to speakers) from 2008 to 2020. Still, in this project, we will only focus on the most recent quotations, being from <b>2015 to 2020</b>.  We combine this dataset with speakers’ information from <i>Wikidata</i>, a collaboratively edited open source knowledge base.</p>
 
-      <img src="images/logo/Wikidata-logo.png" class="logo-image"><div class="specialx"> <h4>X</h4> </div><img src="images/logo/Screenshot%202021-12-13%20at%2015.09.19.png" class="logo-image">
+      <img src="images/logo/Wikidata-logo.png" class="logo-image" data-aos="fade-up"><div class="specialx"> <h4>X</h4> </div><img src="images/logo/Quotebank.svg" class="logo-image" data-aos="fade-up">
 
 
       <h1><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
         <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
       </svg> Goals</h1>
-
-
-      <p>We are interested in using this dataset to answer the following question:
-      <mark>"Do speech behaviours related to confidence and uncertainty vary between men and women?"</mark>
-        To answer this question, we'll go through the following points:<br></p>
+      <p>We are interested in using this dataset to answer the following question:</p>
+      <div class="d-flex p-2"> <h2><mark>"Do speech behaviours related to confidence and uncertainty vary between men and women?"</mark></h2></div>
+      <p> To answer this question, we'll go through the following points:<br></p>
 
       {% if site.data.questions %}
       <div class="strip strip-grey">
         <div class="container pt-6 pb-6 pt-md-4 pb-md-3">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center rellax" data-rellax-speed="4">
             {% for question in site.data.questions %}
             <div class="col-12 col-md-6 col-lg-4 mb-2">
               <div class="feature">
@@ -82,37 +80,47 @@ bodyClass: "page-home"
       <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
 
-      <div class="data">
-      <br>
-      <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+
+      <h1><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
         <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
       </svg>What does the data say?</h1>
         <br>
       <h3>Gender</h3>
-        <div class="graphs">
-        {% include gender_dist_plot.html  %}
-        </div>
         <p>We see that there are 31 genders present in <i>Wikidata</i>. In this analysis, we will only focus on 2 genders: “Female” and “Male”.</p>
 
-        <h4>Languages</h4>
+      <img src="images/graphs/gender_dist_plot.svg" class="graphs">
 
-        {% include language_dist_plot.html  %}
+        <h4><br></br>Languages<br></h4>
 
-        <p>Most of the quotes are in English. Still, there are some non-English quotes in the dataset. <br>These are removed from our analysis.</p>
+        <img src="images/graphs/language_dist_plot.svg" class="graphs">
+
+        <p>Most of the quotes are in English. Still, there are some non-English quotes in the dataset. These are removed from our analysis.</p>
 
         <h4>Female/Male Ratio</h4>
-        <div class="graphs">
-        {% include gender_dist_plot_across_prof.html  %}
+      <img src="images/graphs/gender_dist_plot_across_prof.svg" class="graphs">
+      <img src="images/graphs/gender_dist_plot_across_background.svg" class="graphs">
+
+      <p>We see that women are only a small fraction of Quotebank speakers. <br> <br> </p>
+      <div class="strip strip-grey">
+        {% for profession in site.data.professions %}
+        <div class="col-12 col-md-6 col-lg-4 mb-2">
+          <div class="profession">
+            {% if profession.image %}
+            <div class="profession-image"><img alt="{{ profession.title }} logo" src="{{ profession.image.url | relative_url }}" width="{{ profession.image.width }}" height="{{ profession.image.height }}" /></div>
+            {% endif %}
+            <h2 class="profession-title">{{ profession.title }}</h2>
+            <div class="profession-content">{{ profession.pourcentage }}</div>
+          </div>
         </div>
-        <div class="graphs"></div>
-        {% include gender_dist_plot_across_time_across_background.html %}
+        {% endfor %}
       </div>
 
-        <p>We see that women are only a small fraction of Quotebank speakers. </p>
-      </div>
+
 
     </div>
   </div>
 </div>
+
+
 
 
