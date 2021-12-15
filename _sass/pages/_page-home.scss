@@ -88,9 +88,11 @@
   }
   .graphs{
     display: block;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .callmepink{
+    background-color: #fff6f8;
   }
 
   .profession{
@@ -115,9 +117,8 @@
     }
   }
   .canyoucenterpls{
-    display: block;
-    width:100%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
