@@ -35,6 +35,9 @@ bodyClass: "page-teams"
                     {% if team.linkedinurl %}
                     <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
                     {% endif %}
+                    {% if team.githuburl %}
+                    <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">Github</a>
+                    {% endif %}
                 </div>
                 <div class="team-content">{{ team.content | truncate: 120 }}</div>
             </div>
