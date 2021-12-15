@@ -9,4 +9,4 @@ linkedinurl: "http://linkedin.com/in/assia-ouanaya-828514187/"
 weight: 4
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.
+More of a tea person, I enjoy calmness and yoga. 

@@ -79,6 +79,7 @@ bodyClass: "page-home"
       <h3>Classifier</h3>
       <p>To analyse speech uncertainty, we adapted an already existing <a href="https://hal.archives-ouvertes.fr/hal-01484994">uncertainty detection classifier</a>, using 6 features. Uncertainty is defined by speculative verbs (like suggest or presume), adjectives and adverbs (like probably, possibly), auxiliary verbs (must, should) or the use of some tense or modes of conjugation (subjunctive, conditional). This classifier is an automatic machine learning method to detect uncertainty in natural language.</p>
 
+
       <h1><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
         <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
       </svg>Let's explore our data!</h1>
@@ -87,25 +88,23 @@ bodyClass: "page-home"
       <h3>Gender exploration</h3>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
-        <img src="images/graphs/gender_dist_plot.svg" class="img-fluid graphs">
+          {% include gender_dist_plot.html %}
         </div>
       </div>
       <p>We see that there are 31 genders present in <i>Wikidata</i>. In this analysis, we will only focus on 2 genders: <b>“Female”</b> and <b>“Male”</b>.</p>
 
-        <h4>Languages<br></h4>
+        <h3>Languages<br></h3>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
-          <img src="images/graphs/language_dist_plot.svg" class="img-fluid graphs">
+          {% include language_dist_plot.html %}
         </div>
       </div>
       <p>We notice that the majority of our the quotes are in English. Still, there are some non-English quotes in the dataset. These are removed from our analysis and we only keep the <b>English</b> ones.</p>
 
         <h3>Female/Male Ratio</h3>
       <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
-          <img src="images/graphs/gender_dist_plot_across_prof.svg" class="graphs">
-          <br>
-          <img src="images/graphs/gender_dist_plot_across_background.svg" class="img-fluid graphs">
+        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+          {% include gender_dist_plot_across_prof_and_back.html %}
         </div>
       </div>
       <p>As seen from the data, a great majority of speakers are males, meaning there is a persistent under-representation of women in the news. Unfortunately, this was expected. Indeed, even today in the early twenty-first century, women continue to receive substantially less media coverage than men, despite women’s much increased participation in public life. However, only few studies have systematically examined whether such media bias exists. <br></br>
