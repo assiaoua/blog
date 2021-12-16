@@ -9,4 +9,4 @@ promoted: true
 weight: 2
 ---
 
-See the world map on the website. She did it.
+Went to Hogwarts in Gryffindor. Already has a diploma in magic. Is currently mastering coding magic.

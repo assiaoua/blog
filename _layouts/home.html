@@ -75,7 +75,7 @@ bodyClass: "page-home"
         <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
       </svg> Methods </h1>
       <h3>Creation of professional & background data frames</h3>
-      <p>To have a general overview of the speakers’ occupations, we focus on four main professional fields: arts, science, economy and politics. Our speakers are then regrouped under professions from each professional field.</p>
+      <p>To have a general overview of the speakers’ occupations, we focus on four main professional fields: <b>arts, science, economy and politics</b>. Our speakers are then regrouped under professions from each professional field.</p>
       <h3>Classifier</h3>
       <p>To analyse speech uncertainty, we adapted an already existing <a href="https://hal.archives-ouvertes.fr/hal-01484994">uncertainty detection classifier</a>, using 6 features. Uncertainty is defined by speculative verbs (like suggest or presume), adjectives and adverbs (like probably, possibly), auxiliary verbs (must, should) or the use of some tense or modes of conjugation (subjunctive, conditional). This classifier is an automatic machine learning method to detect uncertainty in natural language.</p>
 
@@ -88,7 +88,7 @@ bodyClass: "page-home"
       <h3>Gender exploration</h3>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
-          {% include gender_dist_plot.html %}
+          {% include genders_dist_plot.html %}
         </div>
       </div>
       <p>We see that there are 31 genders present in <i>Wikidata</i>. In this analysis, we will only focus on 2 genders: <b>“Female”</b> and <b>“Male”</b>.</p>
@@ -137,14 +137,40 @@ bodyClass: "page-home"
     <h3>Analysis of differences in communicative acts in relation to gender within the different professional areas</h3>
         <p>Looking at the figure about, there seems to be only few differences in speech uncertainty between men and women, regrouping all quotes (2015 to 2020) together.</p>
         <h3>Background (environment)</h3>
+
         <p>What are the roles of environment (nationality), culture/tradition (religion, ethnic groups), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us?</p>
-      <h3> Has there been a possible change over time (from 2015 to 2020)?</h3>
+      <p>Let's have a look at nationality</p>
 
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
-      {% include test.html %}
+          {% include world_map.html %}
         </div>
       </div>
+
+      <p>Let's have a look at religion</p>
+      <div class="row">
+        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+          {% include percentage_religions.html %}
+        </div>
+      </div>
+
+      <h3> Has there been a possible change over time (from 2015 to 2020)?</h3>
+
+
+
+      <h3><br>Statistical analysis</h3>
+      <p>We performed linear regression using the certainty label we obtain from the Pajean uncertainty classifier to identify important features for certainty prediction. It is important to keep in mind that the classifier has a 62.8 F-score thus some of the results we obtain could be due to chance.<br>We considered features with p-value under 0.05 not statistically significant.<br></p>
+      <div class="row">
+        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+          <img src="images/graphs/stats_1300.svg" class="img-fluid graphs">
+        </div>
+      </div>
+
+      <h1><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+      </svg>Conclusion</h1>
+
+
     </div>
   </div>
 </div>

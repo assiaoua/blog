@@ -6,6 +6,11 @@
       "url": "images/features/person.svg",
       "width": 30,
       "height": 30
+    },
+    "image2": {
+      "url": "/images/illustrations/manypixels/Data processing _Flatline.svg",
+      "width": 60,
+      "height": 60
     }
   },
   {
@@ -15,15 +20,25 @@
       "url": "images/features/globe2.svg",
       "width": 20,
       "height": 20
+    },
+    "image2": {
+      "url": "/images/illustrations/manypixels/Diversity _Flatline.svg",
+      "width": 60,
+      "height": 60
     }
   },
   {
     "title": "Temporal gender difference",
     "description": "Has there been a possible change over time from 2015 to 2020 concerning gender speech difference?",
     "image": {
-      "url": "images/features/hourglass.svg",
+      "url": "/images/features/hourglass.svg",
       "width": 20,
       "height": 20
+    },
+    "image2": {
+      "url": "/images/illustrations/manypixels/Timeline_Flatline.svg",
+      "width": 60,
+      "height": 60
     }
   }
 ]

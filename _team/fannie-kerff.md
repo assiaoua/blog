@@ -9,4 +9,4 @@ linkedinurl: "http://linkedin.com/in/fannie-kerff/"
 weight: 3
 ---
 
-The mom of the group.
+Skillfully clumsy. Likes piñatas and secret santas.

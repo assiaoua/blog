@@ -9,4 +9,4 @@ linkedinurl: "http://linkedin.com/in/assia-ouanaya-828514187/"
 weight: 4
 ---
 
-More of a tea person, I enjoy calmness and yoga. 
+My spirit animal is a chameleon because it adapts to everything.
