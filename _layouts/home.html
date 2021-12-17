@@ -97,7 +97,7 @@ bodyClass: "page-home"
       </div>
       <p>We notice that the majority of our the quotes are in <b>English</b>. Still, there are some non-English quotes in the dataset. These are removed from our analysis, limiting our analysis only on the English quotes.</p>
 
-        <h3>Speakers female & male ratio</h3>
+        <h3>Female & male speakers ratio</h3>
       <div class="col-xl-12">
           {% include gender_dist_plot_across_prof_and_back.html %}
       </div>
@@ -136,7 +136,7 @@ bodyClass: "page-home"
 
       <p>Looking at the figure above, there seems to be only few differences in speech uncertainty between men and women, regrouping all quotes (2015 to 2020) together, the females even seeming a little less uncertain than males, intriguingly.</p>
         <h3><img src="images/features/globe2.svg" width="21" height="21" class="small-icons"> Analysis of speaker's background influence on certainty </h3>
-        <p>What are the roles of the environment (nationality), culture/tradition (religion), and education (whether the speaker obtained a specific academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us? <br> <br></br>Let's have a look at nationality: </p>
+        <p>What are the roles of the environment (nationality), culture/tradition (religion), and education (whether the speaker obtained a specific academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us? <br></br>Let's have a look at nationality influence: </p>
 
       <div class="col-xl-12">
           {% include world_map.html %}
@@ -146,26 +146,34 @@ bodyClass: "page-home"
         <p>The colors range from white, indicating that women represent the highest number of uncertain speakers in the country, to dark red indicating that men are the highest number of uncertain speakers from the country.<br>
           Using the cursor, we can have an overview of the distribution of gender uncertainty over the years. It seems that female speakers tend to become more uncertain as the years go by.
         </p>
-        <p>Let's have a look at religion</p>
+        <p>Let's have a look at religions influence:</p>
       </div>
 
       <div class="col-xl-12">
           {% include percentage_religions.html %}
       </div>
 
-      <p>Let's have a look at academic degree</p>
+      <p>Let's have a look at academic degrees influence:</p>
       <div class="col-xl-12">
           <br>
           {% include percentage_academic_degree.html %}
       </div>
 
-      <p>Looking at the figures above, there seems to be a consistent distribution of 70% certain and 30% uncertain speakers in each condition. Still, there seems that … .</p>
+      <p>Looking at the figures above, there seems to be a consistent distribution of 70% certain and 30% uncertain speakers in each condition. Still, the speakers having the least certain speech behaviours are hinduists (only 63% quotes are certain). In contrast, the speakers having a bachelor degree are the most certain, with 75% of their quotes being certain.</p>
 
       <h3><img src="images/features/hourglass.svg" width="21" height="21" class="small-icons"> Analysis of temporal evolution of the gender difference from 2015 to 2020 </h3>
 
       <div class="col-xl-12">
         <br>
         {% include percentage_uncertain_plot_across_prof_across_time.html %}
+      </div>
+
+      <p>We can observe a general direction of the quotes towards more uncertainty. We were able to confirm this statistically and we found that the certainty was correlated to a drop of -0.35% per year. We also found that women’s quotes are becoming slightly more certain, +0.1% per year.<br>
+        This suggests that the trend is going in the direction of equality amongst genders.
+      </p>
+      <div class="col-xl-12">
+        <br>
+        {% include percentage_uncertain_plot_across_back_across_time.html %}
       </div>
 
       <h3><img src="images/features/percent.svg" width="21" height="21" class="small-icons"> Statistical analysis</h3>
@@ -180,17 +188,31 @@ bodyClass: "page-home"
         <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
       </svg>Conclusion</h1>
 
-      <p>Through this notebook, we aimed to analyze the speech difference between women and men using the <i>Quotebank</i> dataset. We started from the hypothesis that women speak less confidently than men and in a more uncertain way. To verify this claim, we conducted an analysis with the help of a classifier which distinguishes uncertain quotations from certain quotations. We also used <i>Wikidata</i> as a supplement input data to study more closely the quotation speakers.
+      <p>Through this notebook, we aimed to analyze the speech difference between women and men using the <i>Quotebank</i> dataset. We started from the hypothesis that women speak less confidently than men and in a more uncertain way. To verify this claim, we conducted an analysis with the help of a classifier distinguishing uncertain from certain quotations. We also used <i>Wikidata</i> as a supplement input data to study more closely the quotations’ speakers.
         <br>
-        In our first analysis we found similar certainty levels for male and female at approximately 70%, we were considering all speakers indiscriminately.<br>
-        Then, we performed various data frame separation with respect to the `occupation`, `religion`, `nationality` and `education`, to be able to measure the impact of each influence and to remove the bias.
-        For our initial question, it seems that there is no significant difference between men and women when compared in the same field of work. But, we could note a significant overall certainty probability of 90% for this population, 20% more than when considered the full population.<br>
+        In our first analysis, we found <b>similar certainty levels</b> of approximately 70% for males and females, considering all speakers indiscriminately.<br>
+        Then, we performed various data frames’ separations with respect to the `occupation`, `religion`, `nationality` and `education`, to be able to measure the impact of each influence and to remove their bias. Concerning our initial question: “to what extent can we observe the differences in communicative acts in relation to gender within a professional area?”, it seems that there is <b>no significant difference</b> between men and women when compared in the same field of work. However, we can note a significant overall certainty probability of 90% for this population, being 20% more than when considering the full population.<br>
+        <img src="images/illustrations/manypixels/Diversity _Flatline.svg" class="text-image" data-aos="fade-up">
         <br>
-        We continued our research analyzing the backgrounds of the speakers, such as nationality, religion, and academic degree. Again background and gender interactions were rarely significant. This could be due to the important imbalance in gender of the <i>Quotebank</i> dataset (~ 75% males & 25% females). Thus interactions of a specific background with the female gender were measured on much smaller samples.<br>
+        We continued our research by analyzing the backgrounds of the speakers, such as their nationality, religion, and academic degree. Again, background and gender interactions were rarely significant. This could be due to the important <b>imbalance</b> in the gender of the <i>Quotebank</i> dataset (~ 75% males & 25% females). Thus, interactions of a specific background with the female gender were measured on much smaller samples.<br>
         <br>
-        It is important to remember that women who are cited in <i>Quotebank</i> may not be representative of all women. They represent a subset of women who have acquired a high notoriety and acknowledgment. The imbalance of the <i>Quotebank</i> dataset suggests that this subset ratio is still today smaller amongst women than amongst men.<br>
-        This could be an important bias in our study, which could have tilted our study towards equality amongst genders.
+        Finally, we analyzed whether there had been a possible change over time from 2015 to 2020. We found a statistical significance that quotes were correlated to a <b>certainty drop of -0.35%</b> per year although women’s quotes are becoming slightly more certain, +0.1% per year. This suggests that the trend is going in the direction of equality amongst genders.<br>
+        It is important to remember that female speaker from <i>Quotebank</i> may <b>not be representative</b> of all women. They represent a subset of women who have acquired high notoriety and acknowledgement. The imbalance of the <i>Quotebank</i> dataset suggests that the subset of successful women amongst women is still today smaller than the ratio of successful men amongst men. This could be an important bias in our study, which could have directed our study towards apparent equality amongst genders. Therefore, the real problem does not seem to be the way women express themselves but rather the voice we give them…
       </p>
+
+      <h1><br><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+      </svg>References</h1>
+
+      <div class="refs">
+        <ol>
+          <li>Adani S, Cepanec M. Sex differences in early communication development: behavioral and neurobiological indicators of more vulnerable communication system development in boys. Croat Med J. 2019;60(2):141-149. doi:10.3325/cmj.2019.60.141</li>
+          <li>Broadbridge, James. “An Investigation into Differences between Women ’ s and Men ’ s Speech.” (2009).</li>
+          <li>Pierre-Antoine Jean, Sébastien Harispe, Sylvie Ranwez, Patrice Bellot, Jacky Montmain. Uncertainty detection in natural language: a probabilistic model. WIMS '16 Proceedings of the 6th International Conference on Web Intelligence, Mining and Semantics, Jun 2016, Nîmes, France. ⟨10.1145/2912845.2912873⟩. ⟨hal-01484994⟩</li>
+          <li>Shor E, van de Rijt A, Miltsov A, Kulkarni V, Skiena S. A Paper Ceiling: Explaining the Persistent Underrepresentation of Women in Printed News. American Sociological Review. 2015;80(5):960-984. doi:10.1177/0003122415596999</li>
+        </ol>
+      </div>
 
     </div>
   </div>
