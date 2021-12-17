@@ -86,26 +86,20 @@ bodyClass: "page-home"
         <br>
       <p>Before starting to investigate our research questions, let's have a look at what our dataset looks like.</p>
       <h3>Speakers gender exploration</h3>
-      <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
+      <div class="col-xl-12">
           {% include genders_dist_plot.html %}
-        </div>
       </div>
       <p>We see that there are 32 genders present in <i>Wikidata</i>. In this analysis, we will only focus on 2 genders: <b>“Female”</b> and <b>“Male”</b>.</p>
 
         <h3>Quotes languages exploration<br></h3>
-      <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
+      <div class="col-xl-12">
           {% include language_dist_plot.html %}
-        </div>
       </div>
       <p>We notice that the majority of our the quotes are in <b>English</b>. Still, there are some non-English quotes in the dataset. These are removed from our analysis, limiting our analysis only on the English quotes.</p>
 
         <h3>Speakers female & male ratio</h3>
-      <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+      <div class="col-xl-12">
           {% include gender_dist_plot_across_prof_and_back.html %}
-        </div>
       </div>
       <p>As seen from the data, a great majority of speakers are males, meaning there is a persistent <b>under-representation</b> of women in the news. Unfortunately, this was expected. Indeed, even today in the early twenty-first century, women continue to receive substantially less media coverage than men, despite women’s much increased participation in public life. However, only few studies have systematically examined whether such media bias exists. <br></br>
         Still, a recent American Sociological Review<sup><a href="https://journals.sagepub.com/doi/full/10.1177/0003122415596999">4</a></sup> found that societal-level inequalities are the dominant determinants of continued gender differences in coverage: the media focuses nearly exclusively on the highest strata of occupational and social hierarchies, in which women’s representation has remained poor. As a result, we will focus our analysis on whether there is a difference in speech uncertainty in different professional areas, and whether those have improved from 2015 to 2020. Additionally, to broaden our analysis, the background of the speakers will also be analysed to find other possible correlations between the speakers’ environments and their speech behaviours.</p>
@@ -134,18 +128,17 @@ bodyClass: "page-home"
       </svg> Results </h1>
     <h3>Analysis of differences in communicative acts in relation to gender within the different professional areas</h3>
 
-      <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+      <div class="col-xl-12">
           <br>
           {% include percentage_uncertain_plot_across_prof.html %}
-        </div>
+
       </div>
 
       <p>Looking at the figure above, there seems to be only few differences in speech uncertainty between men and women, regrouping all quotes (2015 to 2020) together, the females even seeming a little less uncertain than males, intriguingly.</p>
         <h3>Analysis of speaker's background influence on certainty </h3>
         <p>What are the roles of the environment (nationality), culture/tradition (religion), and education (whether the speaker obtained a specific academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us? <br> <br></br>Let's have a look at nationality: </p>
 
-      <div class="hello">
+      <div class="col-xl-12">
           {% include world_map.html %}
       </div>
 
@@ -156,12 +149,12 @@ bodyClass: "page-home"
         <p>Let's have a look at religion</p>
       </div>
 
-      <div class="hello">
+      <div class="col-xl-12">
           {% include percentage_religions.html %}
       </div>
 
       <p>Let's have a look at academic degree</p>
-      <div class="hello">
+      <div class="col-xl-12">
           <br>
           {% include percentage_academic_degree.html %}
       </div>
@@ -170,7 +163,7 @@ bodyClass: "page-home"
 
       <h3> Has there been a possible change over time from 2015 to 2020?</h3>
 
-      <div class="hello">
+      <div class="col-xl-12">
         <br>
         {% include percentage_uncertain_plot_across_prof_across_time.html %}
       </div>
@@ -188,12 +181,12 @@ bodyClass: "page-home"
       </svg>Conclusion</h1>
 
       <p>Through this notebook, we aimed to analyze the speech difference between women and men using the <i>Quotebank</i> dataset. We started from the hypothesis that women speak less confidently than men and in a more uncertain way. To verify this claim, we conducted an analysis with the help of a classifier which distinguishes uncertain quotations from certain quotations. We also used <i>Wikidata</i> as a supplement input data to study more closely the quotation speakers.
-        <br><
+        <br>
         In our first analysis we found similar certainty levels for male and female at approximately 70%, we were considering all speakers indiscriminately.<br>
         Then, we performed various data frame separation with respect to the `occupation`, `religion`, `nationality` and `education`, to be able to measure the impact of each influence and to remove the bias.
         For our initial question, it seems that there is no significant difference between men and women when compared in the same field of work. But, we could note a significant overall certainty probability of 90% for this population, 20% more than when considered the full population.<br>
         <br>
-        We continued our research analyzing the backgrounds of the speakers, such as nationality, religion, and academic degree. Again background and gender interactions were rarely significant. This could be due to the important imbalance in gender of the <i>Quotebank</i> dataset (~ 75% males/25% females). Thus interactions of a specific background with the female gender were measured on much smaller samples.<br>
+        We continued our research analyzing the backgrounds of the speakers, such as nationality, religion, and academic degree. Again background and gender interactions were rarely significant. This could be due to the important imbalance in gender of the <i>Quotebank</i> dataset (~ 75% males & 25% females). Thus interactions of a specific background with the female gender were measured on much smaller samples.<br>
         <br>
         It is important to remember that women who are cited in <i>Quotebank</i> may not be representative of all women. They represent a subset of women who have acquired a high notoriety and acknowledgment. The imbalance of the <i>Quotebank</i> dataset suggests that this subset ratio is still today smaller amongst women than amongst men.<br>
         This could be an important bias in our study, which could have tilted our study towards equality amongst genders.
