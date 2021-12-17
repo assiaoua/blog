@@ -148,14 +148,14 @@ bodyClass: "page-home"
 
         <p>What are the roles of environment (nationality), culture/tradition (religion), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us? Let's have a look at nationality: </p>
 
-      <div class="row">
+      <div class="row d-block">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
           <br>
           {% include world_map.html %}
         </div>
       </div>
 
-      <p>Let's have a look at religion</p>
+      <p class="d-block">Let's have a look at religion</p>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
           <br>
@@ -171,11 +171,7 @@ bodyClass: "page-home"
         </div>
       </div>
 
-
-
       <h3> Has there been a possible change over time (from 2015 to 2020)?</h3>
-
-
 
       <h3><br>Statistical analysis</h3>
       <p>We performed linear regression using the certainty label we obtain from the Pajean uncertainty classifier to identify important features for certainty prediction. It is important to keep in mind that the classifier has a 62.8 F-score thus some of the results we obtain could be due to chance.<br>We considered features with p-value under 0.05 not statistically significant.<br></p>
