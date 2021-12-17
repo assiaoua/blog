@@ -29,7 +29,7 @@ bodyClass: "page-home"
             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
         </svg> Context</h1>
 
-      <p>Among all species on Earth, humans have a unique capability of communication using a <b>symbolic communication system</b>, i.e., verbal and written language.  The highly sophisticated language enables humans to communicate in a very precise and complex manner.  Still, communicative speech acts seem to <b>differ</b> between genders. One of the major differences in women and men’s speech is that men have been found to <b>dominate</b> conversations through the use of interruptions and overlaps. Additionally, men use strong expletives, while women use politer versions.</p>
+      <p>Among all species on Earth, humans have a unique capability of communication using a <b>symbolic communication system</b>, i.e., verbal and written language.  The highly sophisticated language enables humans to communicate in a very precise and complex manner.  Still, communicative speech acts seem to <b>differ</b> between genders. One of the major differences in women and men’s speech is that men have been found<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6509633/">1</a>,<a href="https://www.birmingham.ac.uk/Documents/college-artslaw/cels/essays/sociolinguistics/JamesBroadbridgeSociolinguisticsAnInvestigationintoDifferencesbetweenWomensandMensSpeech.pdf">2</a></sup> to <b>dominate</b> conversations through the use of interruptions and overlaps. Additionally, men use strong expletives, while women use politer versions.</p>
 
       <img src="images/illustrations/manypixels/Brainstorming%20session%20_Flatline.svg" class="text-image" data-aos="fade-up">
 
@@ -75,9 +75,9 @@ bodyClass: "page-home"
         <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
       </svg> Methods </h1>
       <h3>Creation of professional & background data frames</h3>
-      <p>To have a general overview of the speakers’ occupations, we focus on four main professional fields: <b>arts, science, economy and politics</b>. Our speakers are then regrouped under professions from each professional field.</p>
+      <p>To have a general overview of the speakers’ occupations, we focus on four main professional fields: <b>arts, science, economy and politics</b>. Our speakers are then regrouped under professions from each professional field. Then, to determine the roles of nationality, religion and education in determining a possible culture gender difference in communicative acts, we selected a general data frame with <b>no condition</b> on profession.</p>
       <h3>Classifier</h3>
-      <p>To analyse speech uncertainty, we adapted an already existing <a href="https://hal.archives-ouvertes.fr/hal-01484994">uncertainty detection classifier</a>, using 6 features. Uncertainty is defined by speculative verbs (like suggest or presume), adjectives and adverbs (like probably, possibly), auxiliary verbs (must, should) or the use of some tense or modes of conjugation (subjunctive, conditional). This classifier is an automatic machine learning method to detect uncertainty in natural language.</p>
+      <p>To analyse speech uncertainty, we adapted an already existing <a href="https://hal.archives-ouvertes.fr/hal-01484994">uncertainty detection classifier</a>, using 6 features. Uncertainty is defined by speculative verbs (like, suggest, presume), adjectives and adverbs (like, probably, possibly), auxiliary verbs (like, must, should) or the use of some tense or modes of conjugation (subjunctive, conditional). This classifier is an automatic machine learning method to detect uncertainty in natural language.</p>
 
 
       <h1><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
@@ -93,7 +93,7 @@ bodyClass: "page-home"
       </div>
       <p>We see that there are 31 genders present in <i>Wikidata</i>. In this analysis, we will only focus on 2 genders: <b>“Female”</b> and <b>“Male”</b>.</p>
 
-        <h3>Languages<br></h3>
+        <h3>Quote's languages<br></h3>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto text-center">
           {% include language_dist_plot.html %}
@@ -101,7 +101,7 @@ bodyClass: "page-home"
       </div>
       <p>We notice that the majority of our the quotes are in English. Still, there are some non-English quotes in the dataset. These are removed from our analysis and we only keep the <b>English</b> ones.</p>
 
-        <h3>Female/Male Ratio</h3>
+        <h3>Quote's female/Male Ratio</h3>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
           {% include gender_dist_plot_across_prof_and_back.html %}
@@ -109,7 +109,7 @@ bodyClass: "page-home"
       </div>
       <p>As seen from the data, a great majority of speakers are males, meaning there is a persistent <b>under-representation</b> of women in the news. Unfortunately, this was expected. Indeed, even today in the early twenty-first century, women continue to receive substantially less media coverage than men, despite women’s much increased participation in public life. However, only few studies have systematically examined whether such media bias exists. <br></br>
         Still, a recent American Sociological <a href="https://journals.sagepub.com/doi/full/10.1177/0003122415596999"> Review </a>found that societal-level inequalities are the dominant determinants of continued gender differences in coverage: the media focuses nearly exclusively on the highest strata of occupational and social hierarchies, in which women’s representation has remained poor. As a result, we will focus our analysis on whether there is a difference in speech uncertainty in different professional areas, and whether those have improved from 2015 to 2020. Additionally, to broaden our analysis, the background of the speakers will also be analysed to find other possible correlations between the speakers’ environments and their speech behaviours.</p>
-      <p>Let's check out how many women are represented in the 4 profession field we defined of interest.<br> <br></p>
+      <p>Let's check out how many women are represented in the 4 profession fields we defined of interest.<br> <br></p>
 
       <div class="container pt-3 pb-3 pt-md-2 pb-md-2 text-center callmepink">
         <h3 class="canyoucenterpls">The female ratio for the different occupation groups </h3>
@@ -136,13 +136,13 @@ bodyClass: "page-home"
       </svg> Results </h1>
     <h3>Analysis of differences in communicative acts in relation to gender within the different professional areas</h3>
         <p>Looking at the figure about, there seems to be only few differences in speech uncertainty between men and women, regrouping all quotes (2015 to 2020) together.</p>
-        <h3>Background (environment)</h3>
+        <h3>What are the roles of the speakers’ backgrounds in determining those differences in speech between men and women?</h3>
 
-        <p>What are the roles of environment (nationality), culture/tradition (religion, ethnic groups), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us?</p>
-      <p>Let's have a look at nationality</p>
+        <p>What are the roles of environment (nationality), culture/tradition (religion), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us? Let's have a look at nationality: </p>
 
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
+          <br>
           {% include world_map.html %}
         </div>
       </div>
@@ -150,10 +150,18 @@ bodyClass: "page-home"
       <p>Let's have a look at religion</p>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
+          <br>
           {% include percentage_religions.html %}
         </div>
       </div>
 
+      <p>Let's have a look at academic degree</p>
+      <div class="row">
+        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+          <br>
+          {% include percentage_academic_degree.html %}
+        </div>
+      </div>
       <h3> Has there been a possible change over time (from 2015 to 2020)?</h3>
 
 
