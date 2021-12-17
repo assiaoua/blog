@@ -168,8 +168,7 @@ bodyClass: "page-home"
         {% include percentage_uncertain_plot_across_prof_across_time.html %}
       </div>
 
-      <p>We can observe a general direction of the quotes towards more uncertainty. We were able to confirm this statistically and we found that the certainty was correlated to a drop of -0.35% per year. We also found that women’s quotes are becoming slightly more certain, +0.1% per year.<br>
-        This suggests that the trend is going in the direction of equality amongst genders.
+      <p>We can observe a general direction of the quotes towards more uncertainty. We were able to confirm this statistically and we found that the certainty was correlated to a drop of -0.35% per year. We also found that women’s quotes are becoming slightly more certain, +0.1% per year.
       </p>
       <div class="col-xl-12">
         <br>
@@ -180,7 +179,7 @@ bodyClass: "page-home"
       <p>We performed linear regression using the certainty label we obtain from the Pajean uncertainty classifier to identify important features for certainty prediction. It is important to keep in mind that the classifier has a 62.8 F-score thus some of the results we obtain could be due to chance.<br>We considered features with p-value under 0.05 not statistically significant.<br></p>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
-          <img src="images/graphs/stats_1300.svg" class="img-fluid graphs">
+          <img src="images/graphs/stats.svg" class="img-fluid graphs">
         </div>
       </div>
 
@@ -191,12 +190,12 @@ bodyClass: "page-home"
       <p>Through this notebook, we aimed to analyze the speech difference between women and men using the <i>Quotebank</i> dataset. We started from the hypothesis that women speak less confidently than men and in a more uncertain way. To verify this claim, we conducted an analysis with the help of a classifier distinguishing uncertain from certain quotations. We also used <i>Wikidata</i> as a supplement input data to study more closely the quotations’ speakers.
         <br>
         In our first analysis, we found <b>similar certainty levels</b> of approximately 70% for males and females, considering all speakers indiscriminately.<br>
-        Then, we performed various data frames’ separations with respect to the `occupation`, `religion`, `nationality` and `education`, to be able to measure the impact of each influence and to remove their bias. Concerning our initial question: “to what extent can we observe the differences in communicative acts in relation to gender within a professional area?”, it seems that there is <b>no significant difference</b> between men and women when compared in the same field of work. However, we can note a significant overall certainty probability of 90% for this population, being 20% more than when considering the full population.<br>
+        Then, we performed various data frames’ separations with respect to the occupation to be able to measure the impact of each professional field and to remove their bias. Concerning our initial question: “to what extent can we observe the differences in communicative acts in relation to gender within a professional area?”, it seems that there is <b>no significant difference</b> between men and women when compared in the same field of work. However, we can note a significant overall certainty probability of 90% for this population, being 20% more than when considering the full population.<br>
         <img src="images/illustrations/manypixels/Diversity _Flatline.svg" class="text-image" data-aos="fade-up">
         <br>
         We continued our research by analyzing the backgrounds of the speakers, such as their nationality, religion, and academic degree. Again, background and gender interactions were rarely significant. This could be due to the important <b>imbalance</b> in the gender of the <i>Quotebank</i> dataset (~ 75% males & 25% females). Thus, interactions of a specific background with the female gender were measured on much smaller samples.<br>
         <br>
-        Finally, we analyzed whether there had been a possible change over time from 2015 to 2020. We found a statistical significance that quotes were correlated to a <b>certainty drop of -0.35%</b> per year although women’s quotes are becoming slightly more certain, +0.1% per year. This suggests that the trend is going in the direction of equality amongst genders.<br>
+        Finally, we analyzed whether there had been a possible change over time from 2015 to 2020. We found a statistical significance that quotes were correlated to a <b>certainty drop of -0.35%</b> per year although women’s quotes are becoming slightly more certain, +0.1% per year.<br>
         It is important to remember that female speaker from <i>Quotebank</i> may <b>not be representative</b> of all women. They represent a subset of women who have acquired high notoriety and acknowledgement. The imbalance of the <i>Quotebank</i> dataset suggests that the subset of successful women amongst women is still today smaller than the ratio of successful men amongst men. This could be an important bias in our study, which could have directed our study towards apparent equality amongst genders. Therefore, the real problem does not seem to be the way women express themselves but rather the voice we give them…
       </p>
 
