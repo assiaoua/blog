@@ -77,7 +77,7 @@ bodyClass: "page-home"
       <h3>Creation of professional & background data frames</h3>
       <p>To have a general overview of the speakers’ occupations, we focus on four main professional fields: <b>arts, science, economy and politics</b>. Our speakers are then regrouped under professions from each professional field. Then, to determine the roles of nationality, religion and education in determining a possible culture gender difference in communicative acts, we selected a general data frame with <b>no condition</b> on profession.</p>
       <h3>Classifier</h3>
-      <p>To analyse speech uncertainty, we adapted an already existing <b>uncertainty detection classifier</b><sup><a href="https://hal.archives-ouvertes.fr/hal-01484994">3</a></sup>, using 6 features. Uncertainty is defined by speculative verbs (like, suggest, presume), adjectives and adverbs (like, probably, possibly), auxiliary verbs (like, must, should) or the use of some tense or modes of conjugation (subjunctive, conditional). This classifier is an automatic machine learning method to detect uncertainty in natural language.</p>
+      <p>To analyse speech uncertainty, we adapted an already existing <b>uncertainty detection classifier</b><sup><a href="https://hal.archives-ouvertes.fr/hal-01484994">3</a></sup>, using 6 features. Uncertainty is defined by speculative verbs (like suggest or presume), adjectives and adverbs (like probably or possibly), auxiliary verbs (like must or should) or the use of some tense or modes of conjugation (subjunctive, conditional). This classifier is an automatic machine learning method to detect uncertainty in natural language.</p>
 
 
       <h1><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
@@ -101,7 +101,7 @@ bodyClass: "page-home"
       </div>
       <p>We notice that the majority of our the quotes are in English. Still, there are some non-English quotes in the dataset. These are removed from our analysis and we only keep the <b>English</b> ones.</p>
 
-        <h3>Quote's female/Male Ratio</h3>
+        <h3>Quote's female & male ratio</h3>
       <div class="row">
         <div class="col-10 col-md-12 col-lg-8 mx-auto">
           {% include gender_dist_plot_across_prof_and_back.html %}
@@ -148,30 +148,24 @@ bodyClass: "page-home"
 
         <p>What are the roles of environment (nationality), culture/tradition (religion), and education (whether the speaker obtained an academic degree) in determining those differences in speech between men and women? How are the lines drawn between the language we use and the environment around us? Let's have a look at nationality: </p>
 
-      <div class="row d-block">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto">
-          <br>
+      <div class="hello">
           {% include world_map.html %}
-        </div>
       </div>
 
-      <p class="d-block">Let's have a look at religion</p>
-      <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto">
-          <br>
+      <div class="col-xl-12">
+      <p>Let's have a look at religion</p></div>
+
+      <div class="hello">
           {% include percentage_religions.html %}
-        </div>
       </div>
 
       <p>Let's have a look at academic degree</p>
-      <div class="row">
-        <div class="col-10 col-md-12 col-lg-8 mx-auto">
+      <div class="hello">
           <br>
           {% include percentage_academic_degree.html %}
-        </div>
       </div>
 
-      <h3> Has there been a possible change over time (from 2015 to 2020)?</h3>
+      <h3> Has there been a possible change over time from 2015 to 2020?</h3>
 
       <h3><br>Statistical analysis</h3>
       <p>We performed linear regression using the certainty label we obtain from the Pajean uncertainty classifier to identify important features for certainty prediction. It is important to keep in mind that the classifier has a 62.8 F-score thus some of the results we obtain could be due to chance.<br>We considered features with p-value under 0.05 not statistically significant.<br></p>
